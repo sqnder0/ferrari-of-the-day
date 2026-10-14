@@ -150,6 +150,7 @@ dateEl.addEventListener("change", () => {
 
   if (date > new Date()) {
     showMessage("You can't pick a date in the future!");
+    return;
   }
 
   setDate(date);
